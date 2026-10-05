@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<title>Apex Pro | Exosquelette de Nouvelle Génération</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600&family=JetBrains+Mono:wght@400&display=swap" rel="stylesheet">
+<style>
+body{margin:0;background:#d5d9e1;font-family:'Instrument Sans',Helvetica,Arial,sans-serif;color:#0b0b0d;-webkit-font-smoothing:antialiased}
+*{box-sizing:border-box}
+a{color:#0b0b0d;text-decoration:none}
+a:hover{color:#5a6070}
+@media (min-width:901px) and (min-height:640px){
+.hero{height:calc(100vh - 2*clamp(12px,3vw,40px)) !important;height:calc(100dvh - 2*clamp(12px,3vw,40px)) !important;flex-wrap:nowrap !important;overflow:hidden}
+.side{min-height:0 !important}
+.hero-left{flex:1 1 0 !important;min-height:0 !important;gap:2vh !important}
+.hero-left>div{gap:2vh !important}
+.hero-h1>span{flex-wrap:nowrap !important;white-space:nowrap}
+.hero-left .tags{max-width:380px !important}
+.hero-vis{flex:1.35 1 0 !important;min-height:0 !important}
+.hero-top{flex:1.25 1 0 !important;min-height:0 !important;aspect-ratio:auto !important}
+#apex-frames{flex:1 1 0 !important;height:0 !important;min-height:0 !important;aspect-ratio:auto !important}
+}
+@media (max-width:900px){
+.hero-col{flex:1 1 100% !important}
+.grid-specs{grid-template-columns:repeat(2,1fr) !important}
+.price-card{max-width:none !important}
+}
+@media (max-width:600px){
+.page{padding:10px !important;gap:10px !important}
+.sec{padding:20px 16px !important}
+.hero{padding:10px !important;gap:16px !important}
+.side{flex:0 0 100% !important;width:100% !important;min-height:0 !important;flex-direction:row !important;padding:8px 14px !important;border-radius:32px !important}
+.side-grp{flex-direction:row !important;gap:14px !important}
+.vt{writing-mode:horizontal-tb !important;transform:none !important;font-size:11px !important}
+.intro{max-width:none !important}
+.tags{max-width:none !important}
+.hero-p{max-width:none !important;font-size:12px !important}
+.hero-col{flex-basis:100% !important}
+.grid-specs{grid-template-columns:1fr !important}
+.grid-specs article{min-height:200px !important;gap:28px !important}
+.tap{min-height:44px;display:inline-flex !important;align-items:center;font-size:11px !important}
+.small{font-size:12px !important}
+.dt{flex:1 1 100% !important}
+.price-card{padding:18px !important}
+.price-card .price{font-size:36px !important}
+.pre-img{min-height:0 !important}
+.foot{flex-direction:column;align-items:flex-start !important}
+.foot nav{gap:12px 18px !important}
+.menu{overflow-y:auto;gap:24px;padding:20px !important}
+}
+</style>
+</helmet>
+
+<div class="page" style="min-height:100vh;padding:clamp(12px,3vw,40px);display:flex;flex-direction:column;gap:clamp(12px,2vw,24px)">
+
+  <section class="hero" data-screen-label="Hero" style="background:#fbfbfc;border-radius:6px;padding:clamp(14px,1.6vw,22px);display:flex;flex-wrap:wrap;gap:clamp(16px,2.4vw,36px);position:relative">
+
+    <aside class="side" style="flex:0 0 64px;background:#0b0b0d;border-radius:40px;display:flex;flex-direction:column;align-items:center;justify-content:space-between;padding:14px 0;min-height:560px">
+      <div class="side-grp" style="display:flex;flex-direction:column;align-items:center;gap:28px">
+        <div style="width:44px;height:44px;border-radius:50%;background:#e9ebef;display:grid;place-items:center">
+          <span style="width:0;height:0;border-left:10px solid transparent;border-right:10px solid transparent;border-bottom:17px solid #0b0b0d;margin-top:-3px"></span>
+        </div>
+        <span class="vt" style="writing-mode:vertical-rl;transform:rotate(180deg);color:#fff;font-size:9px;letter-spacing:0.3em">APEX PRO®</span>
+      </div>
+      <div class="side-grp" style="display:flex;flex-direction:column;align-items:center;gap:20px">
+        <a class="vt" href="#precommande" style="writing-mode:vertical-rl;transform:rotate(180deg);color:#fff;font-size:10px;letter-spacing:0.08em">PRÉ-COMMANDER</a>
+        <a href="#precommande" style="width:44px;height:44px;border-radius:50%;background:#fbfbfc;color:#0b0b0d;display:grid;place-items:center;font-size:14px">↗</a>
+      </div>
+    </aside>
+
+    <div class="hero-col hero-left" style="flex:1 1 340px;min-width:0;display:flex;flex-direction:column;gap:clamp(24px,3vw,40px);position:relative;z-index:2">
+      <div class="intro" style="background:#eceef2;border-radius:24px;padding:10px;display:flex;gap:14px;max-width:300px">
+        <div style="flex:0 0 120px;aspect-ratio:1;border-radius:16px;background-image:url('uploads/ezgif-frame-005.png_2K_20261005085421.jpg');background-size:cover;background-position:50% 35%"></div>
+        <div style="display:flex;flex-direction:column;justify-content:space-between;gap:12px;padding:4px 2px">
+          <p style="margin:0;font-size:11px;line-height:1.35;text-wrap:pretty">L'exosquelette adaptatif le plus avancé jamais conçu. Fibre de carbone, IA embarquée, cœur quantique.</p>
+          <a class="small" href="#specifications" style="display:flex;align-items:center;border:1.5px solid #0b0b0d;border-radius:20px;height:32px;font-size:9px;font-weight:600;letter-spacing:0.04em;overflow:hidden" style-hover="background:#0b0b0d;color:#fff">
+            <span style="flex:1;text-align:center">DÉCOUVRIR</span>
+            <span style="width:42px;height:100%;display:grid;place-items:center;border-left:1.5px solid currentColor;border-radius:20px">›››</span>
+          </a>
+        </div>
+      </div>
+
+      <div style="display:flex;flex-direction:column;padding-left:4px">
+        <div style="display:flex;gap:16px;padding-bottom:22px">
+          <span style="position:relative;width:8px;display:flex;justify-content:center"><span style="width:8px;height:8px;border-radius:50%;background:#d0d3da;margin-top:4px"></span><span style="position:absolute;top:16px;bottom:-8px;width:1px;background:#d0d3da"></span></span>
+          <span style="display:flex;flex-direction:column;gap:2px"><span style="font-size:11px;font-weight:500">10 247+ — PRÉ-COMMANDES</span><span style="font-size:11px;color:#9a9fab;padding-left:18px">Dans le monde entier</span></span>
+        </div>
+        <div style="display:flex;gap:16px;padding-bottom:22px">
+          <span style="position:relative;width:8px;display:flex;justify-content:center"><span style="width:8px;height:8px;border-radius:50%;background:#0b0b0d;margin-top:4px"></span><span style="position:absolute;top:16px;bottom:-8px;width:1px;background:#d0d3da"></span></span>
+          <span style="display:flex;flex-direction:column;gap:2px"><span style="font-size:11px;font-weight:500">12 999 € — À PARTIR DE</span><span style="font-size:11px;color:#9a9fab;padding-left:18px">Livraison gratuite</span></span>
+        </div>
+      </div>
+
+      <div class="tags" style="display:flex;flex-wrap:wrap;gap:6px;max-width:240px">
+        <sc-for list="{{ tags }}" as="t" hint-placeholder-count="6">
+          <button class="tap" onClick="{{ t.toggle }}" style="all:unset;cursor:pointer;border:1.5px solid #0b0b0d;border-radius:20px;padding:8px 16px;font-size:9px;font-weight:600;letter-spacing:0.04em;background:{{ t.bg }};color:{{ t.fg }}">{{ t.label }}</button>
+        </sc-for>
+      </div>
+
+      <div style="margin-top:auto;display:flex;flex-direction:column;gap:clamp(20px,2.5vw,32px)">
+        <p class="hero-p" style="margin:0;font-size:11px;font-weight:500;line-height:1.5;max-width:230px;letter-spacing:0.02em">CHAQUE COMPOSANT A ÉTÉ REPENSÉ POUR REPOUSSER LES LIMITES DE L'INGÉNIERIE HUMAINE.</p>
+        <h1 class="hero-h1" style="margin:0;font-weight:400;font-size:clamp(36px,min(4.6vw,9.5vh),118px);line-height:0.92;letter-spacing:-0.035em;display:flex;flex-direction:column">
+          <span style="display:flex;align-items:center;gap:0.25em;flex-wrap:wrap">Ingénierie
+            <span style="display:inline-flex;align-items:center;gap:0.25em">
+              <span style="width:0.5em;height:0.25em;background:#0b0b0d;border-radius:0.25em 0.25em 0 0;margin-top:-0.15em"></span>
+              <span style="font-size:0.7em;line-height:1;margin-top:0.05em">✳</span>
+            </span>
+          </span>
+          <span>de perfection</span>
+        </h1>
+      </div>
+    </div>
+
+    <div class="hero-col hero-vis" style="flex:1.35 1 420px;min-width:0;display:flex;flex-direction:column;gap:16px">
+    <div class="hero-top" style="position:relative;aspect-ratio:642/630;border-radius:32px;overflow:hidden;background-color:#ecedef;background-image:url('uploads/humanoide.jpg');background-repeat:no-repeat;background-size:auto 96%;background-position:82% 70%">
+      <span style="position:absolute;top:7%;left:6%;font-size:clamp(36px,5.4vw,92px);font-weight:600;line-height:0.85;letter-spacing:-0.04em;color:#0b0b0d;display:flex;flex-direction:column">
+        <span>APEX</span><span>PRO</span>
+      </span>
+      <div style="position:absolute;top:0;right:0;width:13%;height:13%;background:#fbfbfc;border-bottom-left-radius:28px;display:grid;place-items:center">
+        <button onClick="{{ openMenu }}" style="all:unset;cursor:pointer;width:72%;aspect-ratio:1;border-radius:50%;background:#0b0b0d;color:#fff;font-size:9px;display:grid;place-items:center;letter-spacing:0.04em" style-hover="background:#3a3e48">MENU</button>
+      </div>
+      <div style="position:absolute;top:0;right:13%;width:28px;height:28px;background:radial-gradient(circle at 0 100%,transparent 27.5px,#fbfbfc 28px)"></div>
+      <div style="position:absolute;top:13%;right:0;width:28px;height:28px;background:radial-gradient(circle at 0 100%,transparent 27.5px,#fbfbfc 28px)"></div>
+      <div style="position:absolute;left:0;bottom:0;width:28.3%;height:33.3%;background:#fbfbfc;border-top-right-radius:32px"></div>
+      <div style="position:absolute;left:0;bottom:33.3%;width:32px;height:32px;background:radial-gradient(circle at 100% 0,transparent 31.5px,#fbfbfc 32px)"></div>
+      <div style="position:absolute;left:28.3%;bottom:0;width:32px;height:32px;background:radial-gradient(circle at 100% 0,transparent 31.5px,#fbfbfc 32px)"></div>
+    </div>
+    <canvas id="apex-frames" role="img" aria-label="Animation de l'exosquelette Apex Pro au fil du défilement" style="display:block;width:100%;aspect-ratio:1920/1080;border-radius:32px;background-color:#ecedef"></canvas>
+    </div>
+  </section>
+
+  <section class="sec" id="specifications" data-screen-label="Spécifications" style="background:#fbfbfc;border-radius:6px;padding:clamp(24px,4vw,64px);display:flex;flex-direction:column;gap:clamp(28px,4vw,48px)">
+    <div style="display:flex;flex-wrap:wrap;justify-content:space-between;align-items:flex-end;gap:24px">
+      <div style="display:flex;flex-direction:column;gap:16px">
+        <span style="font-family:'JetBrains Mono',monospace;font-size:11px;color:#7a7f8b">SPÉCIFICATIONS</span>
+        <h2 style="margin:0;font-weight:400;font-size:clamp(36px,4.6vw,72px);line-height:0.95;letter-spacing:-0.03em;max-width:12ch">Conçu pour l'impossible.</h2>
+      </div>
+      <p style="margin:0;font-size:13px;line-height:1.5;max-width:320px;color:#4a4f5a;text-wrap:pretty">Chaque composant de l'Apex Pro a été repensé pour repousser les limites de l'ingénierie humaine. Filtrez avec les étiquettes du haut de page.</p>
+    </div>
+    <div class="grid-specs" style="display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:16px">
+      <sc-for list="{{ features }}" as="c" hint-placeholder-count="6">
+        <article style="background:#eceef2;border-radius:24px;padding:22px;display:flex;flex-direction:column;gap:40px;opacity:{{ c.opacity }};transition:opacity .3s;min-height:240px">
+          <div style="display:flex;justify-content:space-between;align-items:center">
+            <span style="font-family:'JetBrains Mono',monospace;font-size:10px;color:#7a7f8b">{{ c.num }}</span>
+            <span style="border:1.5px solid #0b0b0d;border-radius:20px;padding:4px 10px;font-size:9px;font-weight:600">{{ c.tag }}</span>
+          </div>
+          <div style="margin-top:auto;display:flex;flex-direction:column;gap:8px">
+            <h3 style="margin:0;font-weight:500;font-size:24px;letter-spacing:-0.02em">{{ c.title }}</h3>
+            <p style="margin:0;font-size:13px;line-height:1.45;color:#4a4f5a;text-wrap:pretty">{{ c.text }}</p>
+          </div>
+        </article>
+      </sc-for>
+    </div>
+  </section>
+
+  <section class="sec" id="temoignages" data-screen-label="Témoignages" style="background:#0b0b0d;color:#fbfbfc;border-radius:6px;padding:clamp(24px,4vw,64px);display:flex;flex-wrap:wrap;gap:clamp(28px,5vw,80px)">
+    <div style="flex:1 1 300px;display:flex;flex-direction:column;gap:20px">
+      <span style="font-family:'JetBrains Mono',monospace;font-size:11px;color:#8a8f9b">TÉMOIGNAGES — 10 247+ PRÉ-COMMANDES</span>
+      <h2 style="margin:0;font-weight:400;font-size:clamp(36px,4.6vw,72px);line-height:0.95;letter-spacing:-0.03em">Ils font confiance à Apex.</h2>
+      <div style="display:flex;gap:8px;margin-top:auto">
+        <sc-for list="{{ quotes }}" as="q" hint-placeholder-count="3">
+          <button onClick="{{ q.select }}" style="all:unset;cursor:pointer;width:44px;height:44px;border-radius:50%;border:1.5px solid #fbfbfc;display:grid;place-items:center;font-family:'JetBrains Mono',monospace;font-size:11px;background:{{ q.bg }};color:{{ q.fg }}">{{ q.num }}</button>
+        </sc-for>
+      </div>
+    </div>
+    <figure style="flex:1.3 1 340px;margin:0;display:flex;flex-direction:column;gap:28px;justify-content:space-between">
+      <blockquote style="margin:0;font-size:clamp(22px,2.4vw,34px);line-height:1.25;letter-spacing:-0.015em;text-wrap:pretty">« {{ quote.text }} »</blockquote>
+      <figcaption style="display:flex;flex-direction:column;gap:4px;padding-top:20px;border-top:1px solid #2a2d33">
+        <span style="font-size:15px;font-weight:500">{{ quote.name }}</span>
+        <span style="font-size:12px;color:#8a8f9b">{{ quote.role }}</span>
+      </figcaption>
+    </figure>
+  </section>
+
+  <section class="sec" id="fiche" data-screen-label="Fiche technique" style="background:#fbfbfc;border-radius:6px;padding:clamp(24px,4vw,64px);display:flex;flex-wrap:wrap;gap:clamp(28px,5vw,80px)">
+    <div style="flex:1 1 280px;display:flex;flex-direction:column;gap:20px">
+      <span style="font-family:'JetBrains Mono',monospace;font-size:11px;color:#7a7f8b">SOUS LE CAPOT</span>
+      <h2 style="margin:0;font-weight:400;font-size:clamp(36px,4.6vw,72px);line-height:0.95;letter-spacing:-0.03em">Spécifications techniques</h2>
+      <div style="flex:1;min-height:220px;border-radius:24px;background-color:#eceef2;background-image:url('uploads/humanoide2-removebg-preview.png');background-repeat:no-repeat;background-size:cover;background-position:0% 30%"></div>
+    </div>
+    <dl style="flex:1.3 1 340px;margin:0;display:flex;flex-direction:column">
+      <sc-for list="{{ specs }}" as="s" hint-placeholder-count="10">
+        <div style="display:flex;flex-wrap:wrap;gap:8px 24px;padding:16px 0;border-top:1px solid #e1e3e8">
+          <dt class="dt" style="flex:0 0 140px;font-family:'JetBrains Mono',monospace;font-size:11px;color:#7a7f8b;padding-top:3px">{{ s.k }}</dt>
+          <dd style="flex:1 1 200px;margin:0;font-size:15px">{{ s.v }}</dd>
+        </div>
+      </sc-for>
+    </dl>
+  </section>
+
+  <section class="sec" id="precommande" data-screen-label="Pré-commande" style="background:#fbfbfc;border-radius:6px;padding:clamp(24px,4vw,64px);display:flex;flex-direction:column;gap:clamp(32px,5vw,64px)">
+    <div style="display:flex;flex-wrap:wrap;justify-content:space-between;align-items:flex-end;gap:32px">
+      <div style="display:flex;flex-direction:column;gap:20px;max-width:560px">
+        <h2 style="margin:0;font-weight:400;font-size:clamp(44px,7vw,120px);line-height:0.9;letter-spacing:-0.04em">Possédez<br>le futur ✳</h2>
+        <p style="margin:0;font-size:15px;line-height:1.5;color:#4a4f5a">L'Apex Pro n'est pas un simple équipement.<br>C'est une extension de vous-même.</p>
+      </div>
+      <div class="price-card" style="background:#eceef2;border-radius:24px;padding:22px;display:flex;flex-direction:column;gap:20px;width:100%;max-width:420px">
+        <div style="display:flex;flex-direction:column;gap:4px">
+          <span style="font-family:'JetBrains Mono',monospace;font-size:10px;color:#7a7f8b">À PARTIR DE</span>
+          <span class="price" style="font-size:44px;letter-spacing:-0.03em;line-height:1">{{ price }}</span>
+        </div>
+        <div style="display:flex;flex-direction:column;gap:10px">
+          <span style="font-family:'JetBrains Mono',monospace;font-size:10px;color:#7a7f8b">CONFIGURATION</span>
+          <div style="display:flex;gap:6px;flex-wrap:wrap">
+            <sc-for list="{{ configs }}" as="c" hint-placeholder-count="3">
+              <button class="tap" onClick="{{ c.select }}" style="all:unset;cursor:pointer;border:1.5px solid #0b0b0d;border-radius:20px;padding:9px 18px;font-size:10px;font-weight:600;letter-spacing:0.04em;background:{{ c.bg }};color:{{ c.fg }}">{{ c.label }}</button>
+            </sc-for>
+          </div>
+        </div>
+        <button onClick="{{ order }}" style="all:unset;cursor:pointer;height:52px;border-radius:30px;background:#0b0b0d;color:#fff;font-size:11px;font-weight:600;letter-spacing:0.04em;display:flex;align-items:center;justify-content:center;gap:10px" style-hover="background:#3a3e48">{{ orderLabel }}</button>
+        <div style="display:flex;flex-wrap:wrap;gap:6px 16px;font-size:11px;color:#4a4f5a">
+          <span>Livraison gratuite</span><span>Garantie 5 ans</span><span>Retour 30 jours</span>
+        </div>
+      </div>
+      <video class="pre-img" src="video/animer_20261005094851.mp4" autoplay muted loop playsinline preload="auto" aria-label="Vidéo de présentation de l'exosquelette Apex Pro" style="display:block;flex:1 1 100%;width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:24px;background-color:#eceef2"></video>
+    </div>
+    <footer class="foot" style="display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:16px;padding-top:24px;border-top:1px solid #e1e3e8;font-size:11px">
+      <span style="font-weight:600;letter-spacing:0.3em">APEX PRO®</span>
+      <nav style="display:flex;flex-wrap:wrap;gap:24px">
+        <a href="#specifications">Spécifications</a><a href="#temoignages">Témoignages</a><a href="#fiche">Fiche technique</a><a href="#precommande">Pré-commande</a>
+      </nav>
+      <span style="display:flex;align-items:center;gap:10px">
+        <span style="display:flex;gap:2px"><span style="width:3px;height:14px;background:#0b0b0d"></span><span style="width:1px;height:14px;background:#0b0b0d"></span><span style="width:4px;height:14px;background:#0b0b0d"></span><span style="width:1px;height:14px;background:#0b0b0d"></span></span>
+        © 2026 APEX TECHNOLOGIES. TOUS DROITS RÉSERVÉS.
+      </span>
+    </footer>
+  </section>
+
+  <sc-if value="{{ menuOpen }}" hint-placeholder-val="{{ false }}">
+    <div class="menu" style="position:fixed;inset:0;z-index:50;background:#0b0b0d;color:#fbfbfc;padding:clamp(24px,4vw,56px);display:flex;flex-direction:column;justify-content:space-between">
+      <div style="display:flex;justify-content:space-between;align-items:center">
+        <span style="font-size:11px;font-weight:600;letter-spacing:0.3em">APEX PRO®</span>
+        <button onClick="{{ closeMenu }}" style="all:unset;cursor:pointer;width:56px;height:56px;border-radius:50%;background:#fbfbfc;color:#0b0b0d;font-size:9px;display:grid;place-items:center">FERMER</button>
+      </div>
+      <nav style="display:flex;flex-direction:column;gap:4px">
+        <sc-for list="{{ navLinks }}" as="n" hint-placeholder-count="5">
+          <a href="{{ n.href }}" onClick="{{ closeMenu }}" style="color:#fbfbfc;font-size:clamp(40px,7vw,110px);line-height:1;letter-spacing:-0.04em;display:flex;gap:24px;align-items:baseline" style-hover="color:#8a8f9b">
+            <span style="font-family:'JetBrains Mono',monospace;font-size:12px;letter-spacing:0">{{ n.num }}</span>{{ n.label }}
+          </a>
+        </sc-for>
+      </nav>
+      <span style="font-size:11px;color:#8a8f9b">L'exosquelette adaptatif le plus avancé au monde.</span>
+    </div>
+  </sc-if>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;autoplayTestimonials&quot;:{&quot;editor&quot;:&quot;boolean&quot;,&quot;default&quot;:true,&quot;tsType&quot;:&quot;boolean&quot;}}">
+class Component extends DCLogic {
+  state = { tags: [], q: 0, cfg: 0, menuOpen: false, ordered: false };
+  componentDidMount() { this.tick(); this.initFrames(); this.ensureVideo(); setTimeout(() => this.ensureVideo(), 500); }
+  ensureVideo() {
+    const v = document.querySelector('video.pre-img');
+    if (!v) return;
+    v.muted = true; v.defaultMuted = true; v.loop = true; v.playsInline = true;
+    if (v.paused) { const pr = v.play(); if (pr && pr.catch) pr.catch(() => {}); }
+  }
+  initFrames() {
+    const N = 40, imgs = [];
+    for (let i = 1; i <= N; i++) { const im = new Image(); im.onload = () => this.drawFrame(); im.src = 'uploads/frames/ezgif-frame-' + String(i).padStart(3, '0') + '.webp'; imgs.push(im); }
+    this.frames = imgs;
+    this.onScroll = () => { if (!this.raf) this.raf = requestAnimationFrame(() => { this.raf = 0; this.drawFrame(); this.ensureVideo(); }); };
+    window.addEventListener('scroll', this.onScroll, { passive: true });
+    window.addEventListener('resize', this.onScroll);
+    this.drawFrame();
+  }
+  drawFrame() {
+    const cv = document.getElementById('apex-frames');
+    if (!cv || !this.frames) return;
+    const r = cv.getBoundingClientRect(), vh = window.innerHeight;
+    const still = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    const p = still ? 0 : Math.min(1, Math.max(0, (vh - r.top) / (vh + r.height)));
+    let i = Math.round(p * (this.frames.length - 1));
+    while (i >= 0 && !(this.frames[i].complete && this.frames[i].naturalWidth)) i--;
+    if (i < 0) return;
+    const im = this.frames[i], dpr = window.devicePixelRatio || 1;
+    const w = Math.round(r.width * dpr), h = Math.round(r.height * dpr);
+    if (cv.width !== w || cv.height !== h) { cv.width = w; cv.height = h; }
+    const ctx = cv.getContext('2d'), kc = Math.max(w / im.naturalWidth, h / im.naturalHeight), kf = Math.min(w / im.naturalWidth, h / im.naturalHeight);
+    ctx.filter = 'blur(24px)';
+    ctx.drawImage(im, (w - im.naturalWidth * kc) / 2, (h - im.naturalHeight * kc) / 2, im.naturalWidth * kc, im.naturalHeight * kc);
+    ctx.filter = 'none';
+    ctx.drawImage(im, (w - im.naturalWidth * kf) / 2, (h - im.naturalHeight * kf) / 2, im.naturalWidth * kf, im.naturalHeight * kf);
+  }
+  componentDidUpdate() { this.tick(); this.ensureVideo(); }
+  componentWillUnmount() { clearInterval(this.timer); window.removeEventListener('scroll', this.onScroll); window.removeEventListener('resize', this.onScroll); }
+  tick() {
+    const on = this.props.autoplayTestimonials ?? true;
+    if (on && !this.timer) this.timer = setInterval(() => this.setState(s => ({ q: (s.q + 1) % 3 })), 6000);
+    if (!on && this.timer) { clearInterval(this.timer); this.timer = null; }
+  }
+  renderVals() {
+    const pad = i => String(i + 1).padStart(2, '0');
+    const F = [
+      ['ARMURE', 'Armure Céramique', 'Composite nano-céramique résistant aux impacts balistiques. Protection niveau IV avec seulement 2.3 kg.'],
+      ['IA', 'IA Neuromorphique', 'Processeur quantique de 6e génération. Anticipe vos mouvements avec 0.3 ms de latence.'],
+      ['ÉNERGIE', 'Énergie 72h', 'Batterie état solide avec recharge cinétique et panneaux solaires flexibles intégrés.'],
+      ['6G', 'Connectivité 6G', 'Communication satellite directe. Réseau mesh entre unités. Portée illimitée.'],
+      ['VISION', 'Vision Augmentée', 'HUD holographique 360°. Vision nocturne, thermique et multispectrale intégrée.'],
+      ['MODULAIRE', 'Modulaire', 'Architecture plug-and-play. 47 modules interchangeables selon la mission.']
+    ];
+    const tags = this.state.tags;
+    const Q = [
+      ["L'Apex Pro a redéfini notre capacité opérationnelle. La réactivité de l'IA et la légèreté de l'armure sont sans précédent.", 'Commandant L. Moreau', 'Forces Spéciales'],
+      ["Nous avons testé 12 exosquelettes. L'Apex Pro est le seul qui combine performance, confort et fiabilité à ce niveau.", 'Dr. S. Nakamura', 'Directrice R&D — TechCorp'],
+      ["Après 6 mois d'utilisation quotidienne, l'Apex Pro n'a montré aucun signe de fatigue. La recharge cinétique est un game-changer.", 'A. Kowalski', 'Ingénieur Terrain']
+    ];
+    const q = Q[this.state.q];
+    const CFG = [['STANDARD', 12999], ['PRO', 15999], ['PRO MAX', 19999]];
+    const price = CFG[this.state.cfg][1].toLocaleString('fr-FR').replace(/\u202f/g, ' ') + ' €';
+    return {
+      tags: F.map(([t]) => {
+        const on = tags.includes(t);
+        return { label: t, bg: on ? '#0b0b0d' : 'transparent', fg: on ? '#fbfbfc' : '#0b0b0d',
+          toggle: () => this.setState(s => ({ tags: on ? s.tags.filter(x => x !== t) : [...s.tags, t] })) };
+      }),
+      features: F.map((f, i) => ({ num: pad(i), tag: f[0], title: f[1], text: f[2], opacity: !tags.length || tags.includes(f[0]) ? 1 : 0.25 })),
+      quotes: Q.map((_, i) => ({ num: pad(i), bg: this.state.q === i ? '#fbfbfc' : 'transparent', fg: this.state.q === i ? '#0b0b0d' : '#fbfbfc', select: () => this.setState({ q: i }) })),
+      quote: { text: q[0], name: q[1], role: q[2] },
+      specs: [
+        ['POIDS TOTAL', '2.3 kg (sans modules)'], ['MATÉRIAUX', 'Nano-céramique / Titane grade 5 / Fibre de carbone'],
+        ['PROCESSEUR', 'NeuroCore Q6 — 128 qubit'], ['BATTERIE', 'État solide 4800 Wh — 72h autonomie'],
+        ['RECHARGE', 'Cinétique + Solaire + Filaire (45 min 0→100%)'], ['CAPTEURS', '120 capteurs haptiques + 24 gyroscopes'],
+        ['CONNECTIVITÉ', '6G / Satellite / Mesh réseau'], ['RÉSISTANCE', 'IP69K / MIL-STD-810H / Niveau IV balistique'],
+        ['VISION', 'HUD 360° / Thermique / Nyctalope / Multispectral'], ['OS', 'ApexOS 3.0 — IA adaptive embarquée']
+      ].map(([k, v]) => ({ k, v })),
+      configs: CFG.map((c, i) => ({ label: c[0], bg: this.state.cfg === i ? '#0b0b0d' : 'transparent', fg: this.state.cfg === i ? '#fbfbfc' : '#0b0b0d', select: () => this.setState({ cfg: i, ordered: false }) })),
+      price,
+      orderLabel: this.state.ordered ? 'PRÉ-COMMANDE ENREGISTRÉE ✓' : `PRÉ-COMMANDER — ${price}`,
+      order: () => this.setState({ ordered: true }),
+      menuOpen: this.state.menuOpen,
+      openMenu: () => this.setState({ menuOpen: true }),
+      closeMenu: () => this.setState({ menuOpen: false }),
+      navLinks: [['Accueil', '#'], ['Spécifications', '#specifications'], ['Témoignages', '#temoignages'], ['Fiche technique', '#fiche'], ['Pré-commande', '#precommande']].map((n, i) => ({ label: n[0], href: n[1], num: pad(i) }))
+    };
+  }
+}
+</script>
+</body>
+</html>
